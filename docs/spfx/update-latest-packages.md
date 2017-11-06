@@ -47,7 +47,7 @@ When working with SharePoint Framework solutions compatible with SharePoint host
 
 ### Update packages
 
-When updating packages to newer versions, you should always use your package manager (npm or Yarn). You should not edit the `package.json` file manually. If you follow the recommended practice of using a lock file, your changes to the `package.json` file would be ignored.
+When updating packages to newer versions, you should always use your package manager (npm or Yarn). You should not edit the `package.json` file manually. If you follow the recommended practice of using a lock file created wiit npm shrinkwrap, your changes to the `package.json` file would be ignored.
 
 Start with identifying which packages need updating and which newer version you want to use. Please note, that it might not always be possible for you to use the latest version of the given package as it might be incompatible with other SharePoint Framework dependencies, such as TypeScript.
 
