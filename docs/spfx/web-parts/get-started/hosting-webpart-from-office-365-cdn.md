@@ -60,6 +60,13 @@ SharePoint Framework solutions can automatically benefit from the Office 365 Pub
 
 > [!NOTE]
 > If you have previously enabled Office 365 CDN, you should re-enable the public CDN, so that you will have the `*/CLIENTSIDEASSETS`entry added as valid CDN origin for public CDN.
+> You can do so by running the commands
+>```
+>Set-SPOTenantCdnEnabled -CdnType Public -Enable $false
+>Set-SPOTenantCdnEnabled -CdnType Public -Enable $true
+>Get-SPOTenantCdnPolicies -CdnType Public
+>```
+> The `*/CLIENTSIDEASSETS` entry should then appear in your SPOTenantCdnOrigins
 
 You can double check the current setup of your end-points.Execute the following command to get the list of CDN origins from your tenant
 ```
